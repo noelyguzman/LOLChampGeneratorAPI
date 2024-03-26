@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">League of Legends Champs</string>
+    <string name="lol_champions">LOL CHAMPIONS</string>
+    <string name="get_champ">Get Champ</string>
+    <string name="aphelios">Aphelios</string>
+    <string name="search_champion" />
+    <string name="random_champion" />
+    <string name="search_for_a_league_of_legends_champion">Search for a League of Legends Champion...</string>
+    <string name="ApheliosIMG">Aphelios</string>
+    <string name="apheliosText">Aphelios</string>
+    <string name="role">Role</string>
+    <string name="passive" />
+</resources>

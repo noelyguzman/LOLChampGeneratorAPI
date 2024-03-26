@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TitleLOL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#D68181"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LOLTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="682dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/lol_champions"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#A6300B"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/randomChampionButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passiveTextView"
+        tools:text="Next" />
+
+    <ImageView
+        android:id="@+id/champImage"
+        android:layout_width="303dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="47dp"
+        android:contentDescription="@string/aphelios"
+        android:src="@drawable/images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LOLTitle" />
+
+    <TextView
+        android:id="@+id/ChampionName"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/apheliosText"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/passiveTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champImage" />
+
+    <TextView
+        android:id="@+id/passiveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/passive"
+        app:layout_constraintBottom_toTopOf="@+id/randomChampionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChampionName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
